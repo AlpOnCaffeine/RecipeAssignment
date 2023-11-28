@@ -14,72 +14,136 @@ Body{
 h1{
     text-align: center;
     background-color: #F2F2F2;
-    margin-top: 30px;
+    margin-top: 110px;
     font-family: bebas neue;
     font-size: 40px;
+    padding-top: 50px;
 }
 main{
   background-color: #F2F2F2; 
   margin: 0;
-  padding: 10px; 
-}
-.container{
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-
+  padding-top: 40px; 
 }
 /* styles for the menu */
-.container {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .sidebar {
-    flex: 0 0 40%; /* Adjust width as needed */
-  }
-  
-  .menu {
-    display: flex;
-  }
-  
-  .listColumn {
-    flex: 2;
-    background-color: white;
-    border-radius: 1px;
-    border: 1px solid #EB5428;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 40%;
-    list-style: none;
-  }
-  
-  .imageColumn {
-    flex: 0 0 auto;
-  }
-  
-  /* Add any necessary styling for the list items and image */
-  
-  .content {
-    flex: 0 0 50%; /* Adjust width as needed */
-  }
-  
-  /* Style the <p> tags */
-  .content p {
-    display: flex;
-
-  }
-.list-column {
-    flex: 1;
-    padding-right: 20px;
-  }
-
-
-/* Hover effect for links */
-.menu ol li a:hover {
-    background-color: rgba(235, 86, 41,.5);
+   
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #EB5428;
+  padding: 20px;
+  max-width: 80px;
+  margin: 0; 
+  background-color: #fff;
+}
+.menu li {
+  margin-bottom: 10px;
+  list-style: none;
+  text-align: center;
+}    
+.menu button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  background: none;
+  border: none;
+  font-family: 'Bebas Neue', sans-serif;
+  color: #EB5428;
+  cursor: pointer;
+}.menu button span {
+  font-size: 20px; 
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.menu button:hover {
+  color: #fff;
+  background-color:  rgba(122, 191, 191, .5);
+}
+/* styles for the nav */
+.mainNav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /*helps the nav stay on top of the other elements.*/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #F2F2F2;
+  box-shadow: 0 4px 10px -6px rgba(0, 0, 0, 0.5);
+  background-color: #fff;
+}
+.mainNav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  list-style: none;
+  padding: 0;
 }
 
+.mainNav ul li {
+  margin-bottom: 0 10px;
+  text-align: center;
+  transition: all 0.3 ease;
+}
+
+.mainNav ul li a {
+  text-decoration: none;
+  color: #EB5428;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mainNav ul li a:hover {
+  color: #fff;
+  background-color: rgba(122, 191, 191, .5);
+  border-radius: 3px; /* Add a border radius on hover */
+  padding: 5px 10px; /* Adjust padding on hover */
+  transform: translate(-5px);
+}
+.mainNav ul li a img {
+  max-width: 60px; 
+}
+.mainNav svg {
+  fill: #EB5428; /* Change the color of the SVG icon */
+}
+/* styles for the container */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Adjust the gap between elements */
+  justify-content: space-between;
+  align-items: flex-start; /* Align items to the top */
+}
+.menu,.imageColumn,.content {
+  flex: 1;
+  max-width: 300px; /* Adjust the max-width as needed */
+}
+.imageColumn img {
+  max-width: 100%; 
+  height: auto; 
+}
+
+/* Adjust the hamburger icon */
+#hamburgerIcon {
+  display: none; /* Hide the hamburger icon on larger screens */
+}
+}
+@media screen and (max-width: 768px) {
+  .mainNav ul {
+    display: none; /* Hide the nav links on smaller screens by default */
+  }
+
+  #hamburgerIcon {
+    display: block; /* Display the hamburger icon on smaller screens */
+  }
 }
