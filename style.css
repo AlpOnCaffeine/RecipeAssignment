@@ -1,9 +1,9 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Bebas Neue', sans-serif;
+    /*font-family: 'Bebas Neue', sans-serif;
     font-family: 'Montserrat', sans-serif;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Nunito', sans-serif;*/
 }
 @media screen and (min-width:1280px){
 Body{
@@ -17,7 +17,15 @@ h1{
     margin-top: 110px;
     font-family: 'Bebas Neue', sans-serif;
     font-size: 40px;
-    padding-top: 50px;
+    padding-top: 150px;
+}
+p{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 16px;
+  padding: 5px;
+  line-height: 26px;
+  padding: 10px;
+
 }
 main{
   background-color: #F2F2F2; 
@@ -25,7 +33,6 @@ main{
   padding-top: 40px; 
 }
 /* styles for the menu */
-   
 .menu {
   display: flex;
   flex-direction: column;
@@ -35,6 +42,7 @@ main{
   max-width: 80px;
   margin: 0; 
   background-color: #fff;
+  height: 556px;
 }
 .menu li {
   margin-bottom: 10px;
@@ -113,26 +121,102 @@ main{
 .mainNav ul li a img {
   max-width: 60px; 
 }
-.mainNav svg {
-  fill: #EB5428; /* Change the color of the SVG icon */
+.mainNav svg:hover{
+  fill: rgba(122, 191, 191, .5); /* Change the color of the SVG  user icon */
 }
 /* styles for the container */
 .container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px; /* Adjust the gap between elements */
+  display: grid;
+  grid-template-columns: 100px 1fr 60%; 
   justify-content: space-between;
   align-items: flex-start; /* Align items to the top */
+  height: 620px;
 }
 .menu,.imageColumn,.content {
-  flex: 1;
-  max-width: 300px; /* Adjust the max-width as needed */
+  max-width: 1280px; 
 }
 .imageColumn img {
   max-width: 100%; 
-  height: auto; 
+  max-height: 600px; 
 }
-
+/* Styles for the search bar */
+#search {
+  display: flex;
+  border: 2px solid #EB5428;
+  border-radius: 4px;
+  overflow: hidden;
+  max-width: 250px; 
+  /* position it on the top of main */
+  position: absolute;
+  top: 180px; /*this adjust the placement*/
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 999;
+}
+#search form {
+  display: flex;
+  flex: 1;
+}
+#search input[type="text"] {
+  border: none;
+  padding: 10px;
+  flex: 1;
+  outline: none;
+  color: #EB5428;
+  font-family: 'Montserrat', sans-serif;
+}
+#search button {
+  border: none;
+  background: none;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: #EB5428;
+}
+#search button:hover {
+  background-color: #EB5428;
+}
+#search svg {
+  width: 20px; /* Set the size of the SVG icon */
+  height: 20px;
+  transition: fill 0.3s ease;
+}
+#search button:hover svg {
+  fill: white; /* Change the color on hover of the svg */
+}
+/* styles for the details section */
+section.details{
+  background-color: #0D0D0D;
+  color: #78bfbf;
+  padding: 5px;
+}
+section.details h2{
+  text-align: center;
+  font-family: 'Bebas Neue', sans-serif;
+}
+.details dl {
+  background-color: #0D0D0D;
+  color: #7ABFBF;
+  padding: 20px;
+}
+.details dt, .details dd {
+  display: inline-block;
+  line-height: 26px;
+  font-family: 'Montserrat', sans-serif;
+}
+.details dt{
+  font-weight: bold;
+}
+.pair {
+  margin-bottom: 10px; 
+  display: flex;
+  flex-direction: column;
+}
+.pairs{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 /* Adjust the hamburger icon */
 #hamburgerIcon {
   display: none; /* Hide the hamburger icon on larger screens */
