@@ -7,7 +7,7 @@
 }
 @media screen and (min-width:1280px){
 Body{
-    background-color:rgb(122, 191, 191);
+    background-color:rgba(122, 191, 191, .5);
     margin: 10px;
     padding: 5px;
 }
@@ -18,6 +18,9 @@ h1{
     font-family: 'Bebas Neue', sans-serif;
     font-size: 40px;
     padding-top: 150px;
+}
+h2{
+  font-family: 'Bebas Neue', sans-serif;
 }
 p{
   font-family: 'Montserrat', sans-serif;
@@ -192,7 +195,6 @@ section.details{
 }
 section.details h2{
   text-align: center;
-  font-family: 'Bebas Neue', sans-serif;
 }
 .details dl {
   background-color: #0D0D0D;
@@ -217,6 +219,102 @@ section.details h2{
   flex-direction: row;
   justify-content: space-between;
 }
+/* styles for the ingredients and directions articles */
+#more{
+  display: grid;
+  grid-template-columns: 1fr 80%;
+  gap: 10px;
+  margin: 15px;
+  padding-left: 10px;
+  line-height: 30px;
+}
+#more .ingredients h2, #more .directions h2 {
+  text-align: center;
+}
+.ingredients ul{
+  list-style: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+.directions ol{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+/* Styles for the side dishes */
+#sideDishes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px; 
+  background-color: #7ABFBF;
+}
+#sideDishes h2 {
+  grid-column: 1 / -1;
+  grid-row: 1;
+  text-align: center;
+  padding: 10px;
+}
+#sideDishes figure {
+  padding: 15px;
+  font-family: 'Montserrat', sans-serif;
+}
+#sideDishes p:nth-of-type(even) {
+  font-weight: bold;
+}
+.fa-star.checked {
+  color: #EB5428;
+}
+/* Empty stars */
+.fa-star:not(.checked) {
+  color: white;
+}
+/* Styles for footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  font-size: 20px;
+  font-family: 'Bebas Neue', sans-serif;
+  padding: 0 20px;
+}
+footer h2{
+  display: none;
+}
+footer img{
+  max-width: 150px;
+  margin-right: 20px;
+  padding: 5px;
+}
+.goodEats {
+  order: 0;
+  text-align: left;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+}
+.goodEats p{
+  margin: 0;
+  font-weight: bold;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.socials {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  text-align: right;
+  margin-left: auto;
+}
+.socials li {
+  list-style: none;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
 /* Adjust the hamburger icon */
 #hamburgerIcon {
   display: none; /* Hide the hamburger icon on larger screens */
