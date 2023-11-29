@@ -313,6 +313,15 @@ footer img{
   flex-direction: column;
   align-items: center;
   padding: 30px;
+  color: #EB5428;
+}
+.socials li svg {
+  transition: transform 0.3s ease-in-out;
+}
+
+.socials li svg:hover {
+  transform: scale(1.2);
+  cursor: pointer; 
 }
 
 /* Adjust the hamburger icon */
