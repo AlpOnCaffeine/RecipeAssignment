@@ -15,7 +15,7 @@ h1{
     text-align: center;
     background-color: #F2F2F2;
     margin-top: 110px;
-    font-family: bebas neue;
+    font-family: 'Bebas Neue', sans-serif;
     font-size: 40px;
     padding-top: 50px;
 }
@@ -87,9 +87,9 @@ main{
 }
 
 .mainNav ul li {
-  margin-bottom: 0 10px;
+  margin-bottom: 10px;
   text-align: center;
-  transition: all 0.3 ease;
+  transition: all 0.3s ease;
 }
 
 .mainNav ul li a {
