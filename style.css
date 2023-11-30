@@ -570,7 +570,6 @@ p{
   display: grid;
   grid-template-columns:30% 70%;
   padding: 20px;
-  
 }
 #more h2{
   font-family: 'Bebas Neue', sans-serif;
@@ -583,5 +582,50 @@ p{
   padding: 3px;
 }
 /* styles for side dishes */
+#sideDishes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  text-align: center;
+  margin: auto;
+  background-color: #78bfbf;
+}
+#sideDishes h2 {
+  grid-column: 1 / -1;
+  justify-self: center;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 30px;
+}
+#sideDishes h3{
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 25px;
+}
+#sideDishes figure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+#sideDishes figure img {
+  width: 100px;
+  height: auto;
+  margin-right: 5px; /* Add space between image and caption */
+}
+#sideDishes p{
+  background-color: #78bfbf;
+}
+#sideDishes figure figcaption {
+  flex: 1;
+  font-family: 'Bebas Neue', sans-serif;
+  line-height: 26px;
+}
+.fa-star.checked {
+  color: #EB5428;
+}
+/* Empty stars */
+.fa-star:not(.checked) {
+  color: white;
+}
+/* styles for the footer */
 
 }
