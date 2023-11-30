@@ -565,5 +565,23 @@ p{
   font-family: 'Montserrat', sans-serif;
   line-height: 26px; 
 }
+#more{
+  background-color: #F2F2F2;
+  display: grid;
+  grid-template-columns:30% 70%;
+  padding: 20px;
+  
+}
+#more h2{
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 30px;
+}
+#more li{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  padding: 3px;
+}
+/* styles for side dishes */
 
 }
