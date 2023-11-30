@@ -346,16 +346,27 @@ footer img{
   display: none; /* Hide the hamburger icon on larger screens */
 }
 }
-@media screen and (min-width: 768px), (max-width: 1279px) {
-  /* styles for the nav */
-*{
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+body{
+  background-color: rgba(120, 191, 191, 0.5);
+  margin: 10px;
+  padding: auto;
 }
+h1{
+  text-align: left;
+  background-color: #F2F2F2;
+  margin-top: 187px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 40px;
+  padding: 15px;
+}
+/* styles for the nav */
   .mainNav {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000; /*helps the nav stay on top of the other elements.*/
+  z-index: 1; /*helps the nav stay on top of the other elements.*/
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -428,6 +439,52 @@ footer img{
   fill: rgba(122, 191, 191, .5); /* Change the color of the SVG  user icon */
 }
   #hamburgerIcon {
-    display: none; /* hide the hamburger icon on smaller screens */
+    display: none; /* hide the hamburger icon */
   }
+  /* Styles for the search bar */
+#search {
+  display: flex;
+  border: 2px solid #EB5428;
+  border-radius: 4px;
+  overflow: hidden;
+  max-width: 250px; 
+  /* position it on the top of main */
+  position: absolute;
+  top: 20px; /*this adjust the placement*/
+  left: 63%;
+  transform: translate(-50%);
+  z-index: 1;
+}
+#search form {
+  display: flex;
+  flex: 1;
+}
+#search input[type="text"] {
+  border: none;
+  padding: 10px;
+  flex: 1;
+  outline: none;
+  color: #EB5428;
+  font-family: 'Montserrat', sans-serif;
+}
+#search button {
+  border: none;
+  background: none;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: #EB5428;
+}
+#search button:hover {
+  background-color: #EB5428;
+}
+#search svg {
+  width: 20px; /* Set the size of the SVG icon */
+  height: 20px;
+  transition: fill 0.3s ease;
+}
+#search button:hover svg {
+  fill: white; /* Change the color on hover of the svg */
+}
+
 }
