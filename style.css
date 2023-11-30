@@ -24,7 +24,7 @@ h2{
 }
 p{
   font-family: 'Montserrat', sans-serif;
-  font-weight: 16px;
+  font-size: 16px;
   padding: 5px;
   line-height: 26px;
   padding: 10px;
@@ -305,7 +305,6 @@ footer img{
   order: 2;
 }
 .goodEats {
-  order: 0;
   text-align: left;
   margin-right: auto;
   order: 0;
@@ -352,7 +351,6 @@ footer img{
 body{
   background-color: rgba(120, 191, 191, 0.5);
   margin: 10px;
-  padding: auto;
 }
 h1{
   text-align: left;
@@ -364,7 +362,7 @@ h1{
 }
 p{
   font-family: 'Montserrat', sans-serif;
-  font-weight: 16px;
+  font-size: 16px;
   padding: 5px;
   line-height: 26px;
   padding: 10px;
@@ -627,5 +625,64 @@ p{
   color: white;
 }
 /* styles for the footer */
-
+footer h2{
+  display: none;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 0 20px;
+  height: 250px;
+  position: relative;
+}
+footer img{
+  max-width: 150px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 10px;
+  z-index: 1;
+}
+.socials {
+  display: flex;
+  gap: 3px;
+  align-items: center;
+  text-align: right;
+  margin-left: 100px;
+  margin-bottom: 80px;
+}
+.socials li {
+  list-style: none;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  color: #EB5428;
+}
+.socials li svg {
+  transition: transform 0.3s ease-in-out;
+}
+.socials li svg:hover {
+  transform: scale(1.2);
+  cursor: pointer; 
+}
+.Connect{
+  order: 2;
+}
+.goodEats p {
+  margin: 0;
+  padding: 0;
+  font-family: 'Bebas Neue', sans-serif;
+  text-align: center;
+  background-color: white;
+  position: relative;
+  z-index: 2;
+}
+.goodEats{
+  margin-top: 120px;
+  margin-left: 22px;
+}
 }
