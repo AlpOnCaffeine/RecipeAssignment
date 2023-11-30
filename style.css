@@ -208,6 +208,8 @@ section.details{
 }
 section.details h2{
   text-align: center;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 30px;
 }
 .details dl {
   background-color: #0D0D0D;
@@ -360,6 +362,14 @@ h1{
   font-size: 40px;
   padding: 10px;
 }
+p{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 16px;
+  padding: 5px;
+  line-height: 26px;
+  padding: 10px;
+  background-color: #F2F2F2;
+}
 /* styles for the nav */
   .mainNav {
   position: absolute;
@@ -505,7 +515,7 @@ h1{
   position: absolute;
   width: 100%;
   list-style: none;
-  top: 36px;
+  top: 43px;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
@@ -513,14 +523,47 @@ h1{
   gap: 20px;
   z-index: 1;
   background-color: rgba(255, 255, 255, 0.8);
+  justify-content: center;
 }
 .menu button{
   background: none;
   border: none;
   cursor: pointer;
-  padding: 8px 16px;
+  padding: 10px 65px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: #EB5428;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 20px;
+  transition: transform 0.3s ease-in-out;
 }
+.menu button:hover{
+  transform: scale(1.2);
+  cursor: pointer; 
+}
+/* Styles for the details */
+.details{
+  background-color: #F2F2F2;
+  text-align: center;
+  padding: 10px;
+}
+.details h2{
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 30px;
+}
+.pair dt {
+  font-weight: bold; 
+  margin-right: 10px;
+}
+.pair {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 10px;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 26px; 
+}
+
 }
