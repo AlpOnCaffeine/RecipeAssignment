@@ -230,6 +230,7 @@ section.details h2{
 .details dt, .details dd {
   display: inline-block;
   line-height: 26px;
+  font-size: 16px;
   font-family: 'Montserrat', sans-serif;
 }
 .details dt{
@@ -706,8 +707,22 @@ footer img{
   padding: 0;
 }
 body{
-  background-color: #78bfbf;
+  background-color: #F2F2F2;
   position: relative;
+}
+header{
+  background-color: #F2F2F2;
+  height: 300px;
+  position: relative;
+}
+h1{
+  text-align: center;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 40px;
+  background-color: #F2F2F2;
+  position: absolute;
+  bottom: 95px;
+  left: 130px;
 }
   /* Styles for the main nav */ 
 .mainNav{
@@ -785,5 +800,210 @@ body{
 .mainNav img{
   max-width: 50px;
 }
+/* styles for the search */
+#search{
+  display: flex;
+  border: 2px solid  #Eb5428;
+  border-radius: 2px;
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 999;
+  width: 300px;
 }
-
+#search input[type="text"] {
+  border: none;
+  padding: 10px;
+  flex: 1;
+  outline: none;
+  color: #EB5428;
+  font-family: 'Montserrat', sans-serif;
+}
+#search form {
+  display: flex;
+  flex: 1;
+}
+#search button {
+  border: none;
+  background: none;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: #EB5428;
+}
+#search button:hover {
+  background-color: #EB5428;
+}
+#search svg {
+  width: 20px; /* Set the size of the SVG icon */
+  height: 20px;
+  transition: fill 0.3s ease;
+}
+#search button:hover svg {
+  fill: white; /* Change the color on hover of the svg */
+}
+/* Styles for menu */
+.menu{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+  position: absolute;
+  width: 100%;
+  top: 230px;
+  background-color: transparent;
+}
+.menu button{
+  background: none;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #EB5428;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 20px;
+  transition: transform 0.3s ease-in-out;
+  width: 100px;
+  margin-right: 20px;
+}
+.menu button:hover{
+  transform: scale(1.2);
+  cursor: pointer; 
+}
+/* styles for container */
+.imageColumn img{
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+.container p{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 10px;
+}
+/* styles for details */
+.details h2, .ingredients h2{
+  text-align: center;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 30px;
+}
+.pairs{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5px;
+  margin-left: 3px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+.pair{
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+}
+.details dt{
+  font-weight: bold;
+}
+.details dd{
+  margin-left: 15px;
+}
+.ingredients li{
+  margin-left: 30px;
+}
+#more li{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  padding: 3px;
+}
+.directions h2{
+  text-align: center;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 30px;
+}
+.directions ol li{
+  margin-left: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+/* styles side dishes */
+#sideDishes h2{
+  text-align: center;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 30px;
+}
+#sideDishes h3{
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 25px;
+}
+#sideDishes{
+  background-color: #78bfbf;
+  padding: 5px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+#sideDishes figure {
+  display: flex;
+  padding: 5px;
+  margin-top: 20px;
+}
+#sideDishes figure img {
+  width: 90px;
+  height: auto;
+  padding: 10px;
+}
+#sideDishes p{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+.fa-star.checked {
+  color: #EB5428;
+}
+/* Empty stars */
+.fa-star:not(.checked) {
+  color: white;
+}
+footer h2{
+  display: none;
+}
+footer{
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+footer img{
+  max-width: 200px;
+  margin-bottom: 60px;
+}
+.socials{
+  display: flex;
+  margin: 10px;
+  list-style: none;
+}
+.socials li{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  color: #EB5428;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 20px;
+}
+.goodEats p{
+  font-family: 'Bebas Neue', sans-serif;
+}
+.goodEats{
+  position: absolute;
+  bottom: 0;
+  padding: 10px;
+}
+}
